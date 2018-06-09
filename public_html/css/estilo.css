@@ -1,0 +1,1263 @@
+/*========GENERAL=========*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@-webkit-keyframes aparecer {
+  0%{opacity:0;}
+  25%{opacity:0.3;}
+  50%{opacity:0.6;}
+  75%{opacity:0.8;}
+  100%{opacity: 1;}
+}
+
+h1{
+  font-family: 'Pacifico', cursive;
+  margin: auto;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+
+}
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+font-family: "Roboto", sans-serif;
+font-size: 0.8em;
+}
+
+.text-color{
+  color: #B1B1B1!important;
+}
+.naranja{
+  color:#d27923;
+}
+.naranja:hover{
+  color:#a6580c;
+}
+
+.bg-black{
+  background-color: black;
+}
+.centrado{
+width: 100%;
+text-align: center;
+}
+
+.ok{
+  /*background-color: #aaff9c;*/
+  border-color: green!important;
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px #aaff9c!important;
+  box-shadow: inset 0 -2px #aaff9c!important;
+  color:green;
+
+}
+.err{
+
+  border-color: red!important;
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px #ffaa9c!important;
+  box-shadow: inset 0 -2px #ffaa9c!important;
+  color:red;
+}
+
+/*===============HEADER================*/
+header{
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+}
+
+.fixed-header {
+	padding-top: 100px;
+}
+.navbar-brand img{
+  width: 95%;
+  height: 57px;
+}
+
+/*-----------MENU SESION-----------*/
+.dropdown a[id*="circuloblanco"]{
+  color:white;
+}
+.btn-circle {
+	width: 45px;
+	height: 45px;
+	text-align: center !important;
+	padding: 0;
+	border-radius: 50%;
+  background-color: #d99148;
+  border-color: black;
+	-webkit-border-radius: 50%;
+}
+.btn-circle:hover{
+  background-color: #d27923;
+  border-color: black;
+}
+
+.sizecircle{
+width:35px;
+height:35px;
+}
+
+.dropdown-menu{
+display:none;
+}
+.dropdown-menu a{
+  display: block!important;
+  text-align: center;
+  color: #B1B1B1;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+.dropdown-menu a:hover{
+  background-color: rgba(182, 180, 185, 0.62);
+  color:white;
+}
+#desplegable{
+  display: none;
+}
+/*-----------------------------*/
+
+
+
+/*-----=MENU DERECHA------*/
+.derecha{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+}
+.derecha nav {
+  padding-right: 1em;
+}
+/*----------------------*/
+/*-------MENUS OPCIONES-------*/
+.bord{
+  border-bottom: solid 1px rgba(255, 255, 255, 0.55);
+}
+
+#menuhid{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+            justify-content: center;
+}
+.menu1{
+  display: table-row;
+}
+.menu1 li{
+  display: table-cell;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.menu1 li a:hover{
+  color:white!important;
+  text-decoration: none;
+}
+.menu2 ul{
+  align:center;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu2 li ul{
+  display: none;
+}
+.menu2 li ul li a{
+  color: #B1B1B1;
+}
+.menu2 li ul{
+width: 100%;
+
+}
+.menu2 li{
+  text-align: center;
+  padding: 1em;
+}
+.menu2 li:hover{
+  background-color: rgba(182, 180, 185, 0.62);
+
+}
+.menu2 a{
+  display: block;
+}
+.menu2 li:hover a{
+    color: white!important;
+}
+.dropdown-menu{
+  position: absolute;
+  left:inherit;
+}
+.dropdown-menu li{
+  display: block;
+}
+
+.menu1 button, .menu2 button{
+  width: 20px;
+}
+/*------RESPONSIVO--------*/
+
+@media (max-width: 1000px) {
+  #desplegable{
+    display:block;
+  }
+  .hid{
+    display: none!important;
+  }
+  .fixed-header{
+    padding-top: 60px!important;
+  }
+  .bord{
+    border:none!important;
+  }
+}
+/*=================FIN HEADER=========*/
+/*====================CUERPO==============*/
+/*---ARBOL--*/
+
+.arbol{
+    background-color: rgba(182, 180, 185, 0.62);
+    padding-left: 10%;
+}
+.arbol a{
+  color: #d27923;
+}
+
+/*----FORMULARIOS----*/
+.msgErr{
+  text-align: center;
+  color: red;
+  display: block;
+}
+
+.centrado a{
+  width:100%;
+  margin: auto;
+}
+.sign-up-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: white;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -2px #ebebeb;
+  box-shadow: inset 0 -2px #ebebeb;
+  padding-left: 30px;
+}
+.user{
+  background: url("../img/login-sprite.png") no-repeat 5px 0px;
+  background-color: #EEE;
+}
+.pass{
+  background: url("../img/login-sprite.png") no-repeat 5px -50px;
+  background-color: #EEE;
+}
+
+.sign-up-title {
+  margin: -25px -25px 25px;
+  padding: 15px 25px;
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #aaa;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+  background: #f7f7f7;
+}
+.sign-up-input:focus {
+  border-color: #d99148!important;
+  outline: none;
+  -webkit-box-shadow: inset 0 -2px #d99148!important;
+  box-shadow: inset 0 -2px #d99148!important;
+}
+#registro, #iniciarsesion, #cerrarsesion{
+  background: url("../img/express.jpg");
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-bottom: 50px;
+
+}
+.cerrarsesion{
+  height: 300px;
+  text-align: center;
+}
+.registro {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  padding: 33px 25px 29px;
+  background: white;
+  background: -webkit-linear-gradient(#f7f7f7, grey);
+  background: -o-linear-gradient(#f7f7f7, grey);
+  background: linear-gradient(#f7f7f7, grey);
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 5px;
+  -webkit-box-shadow:-7px 0px 14px 0px rgba(0,0,0,0.75),7px 12px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow:-7px 0px 14px 0px rgba(0,0,0,0.75), 7px 12px 14px 0px rgba(0,0,0,0.75);
+box-shadow: -7px 0px 14px 0px rgba(0,0,0,0.75),7px 12px 14px 0px rgba(0,0,0,0.75);
+
+}
+@media(max-width: 768px){
+.registro{
+  width: 100%;
+}
+}
+.botoncentrado{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-naranja {
+  width: 50%;
+  height: 54px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #d99148;
+  border: 0;
+  border-bottom: 2px solid #d76b60;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #d27923;
+  box-shadow: inset 0 -2px #d27923;
+}
+.button-naranja:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#registro h5{
+  text-align: center;
+  padding: 1em;
+}
+.elegircasashogwarts{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+@media(max-width: 768px){
+.elegircasashogwarts{
+  display: flex;
+  flex-direction: column;
+}
+.elegircasashogwarts label{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+}
+
+.elegircasashogwarts input[type="radio"] {
+  display: none;
+}
+
+.elegircasashogwarts label {
+  margin:0.2em;
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.elegircasashogwarts input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+/*PAGINAS*/
+
+/*INICIO*/
+#cuerpo{
+  background: url("../img/hogwarts.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cuerpo p{
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+#bienvenida{
+  color:white;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: aparecer;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  text-align: center;
+  margin: auto;
+
+}
+
+/* --PERSONAJES-- */
+
+/
+#slide{
+  width: 100vw;
+  height: 560px;
+}
+.carousel-item .img-fluid{
+  width:100vw;
+    height: 560px;
+}
+
+/*--HECHIZOS--*/
+@-webkit-keyframes animatedBackground {
+    from { background-position: bottom;}
+    to { background-position:center; }
+}
+@keyframes animatedBackground {
+    from { background-position: bottom;}
+    to { background-position:center; }
+}
+
+#cabecerahechizos{
+
+    width: 100vw;
+    height: 300px;
+    background: url("../img/batalla.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+.cajaproductos{
+padding-top: 80px;
+padding-bottom: 80px;
+width:100vw;
+background-color:inherit;
+text-align: center;
+margin: auto;
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+  font-family: arial;
+  font-weight: bold;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+-webkit-box-pack:center;
+    -ms-flex-pack:center;
+        justify-content:center;
+align:center;
+}
+
+.cajamarca{
+  text-transform: uppercase;
+margin:auto;
+width:70%;
+padding: 1%;
+height: 80px;
+border-top:1px solid #B1B1B1 !important;
+background-color: inherit;
+outline: none;
+-webkit-box-shadow: 0;
+        box-shadow: 0;
+border-right:none;
+border-left:none;
+border-bottom:none;
+cursor: pointer;
+display: block;
+color:#d99148;
+text-shadow: 2px 2px 0px black;
+font-size: 2em;}
+
+
+.defensivos:hover{
+background: url("../img/patronus.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white !important;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;
+}
+.sanador:hover{
+background: url("../img/sana.png");
+background-repeat: no-repeat;
+background-position:center;
+color:white;
+background-size: 100%;
+-webkit-animation:
+animatedBackground 2s linear ;
+        animation:
+animatedBackground 2s linear ;
+}
+.imperdonables:hover{
+background: url("../img/imperdonables.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white;
+background-size: 100%;
+-webkit-animation:
+animatedBackground 2s linear ;
+        animation:
+animatedBackground 2s linear ;
+}
+.ultimo{
+  border-bottom:1px solid #B1B1B1;
+}
+.elementales:hover{
+background: url("../img/elemento.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;}
+.destructivos:hover{
+background: url("../img/hechizo.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;}
+@media(max-width: 768px){
+  .elementales{
+background: url("../img/elemento.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  color:white !important;
+  background-size: 100%;
+  -webkit-animation: animatedBackground 2s linear ;
+          animation: animatedBackground 2s linear ;
+}
+.destructivos{
+background: url("../img/hechizo.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white !important;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;
+}
+.defensivos{
+background: url("../img/patronus.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white !important;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;
+}
+.sanador{
+background: url("../img/sana.png");
+background-repeat: no-repeat;
+background-position:center;
+color:white !important;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;
+}
+
+.imperdonables{
+background: url("../img/imperdonables.jpg");
+background-repeat: no-repeat;
+background-position:center;
+color:white !important;
+background-size: 100%;
+-webkit-animation: animatedBackground 2s linear ;
+        animation: animatedBackground 2s linear ;
+}
+}
+.cajamarca a:hover{
+color:white !important;}
+.cajaopcion{
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-shadow: none;
+  text-transform: uppercase;
+  margin:auto;
+  padding: 1%;
+  background: inherit;
+  outline: none;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  border-right:none;
+  border-left:none;
+  border-bottom:none;
+  width: 70%;
+  border-top:1px solid #B1B1B1;
+  }
+
+  .cajaopcionult{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-shadow: none;
+    text-transform: uppercase;
+    margin:auto;
+    padding: 1%;
+    background: inherit;
+    outline: none;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    border-right:none;
+    border-left:none;
+    border-bottom:none;
+    width: 70%;
+    border-bottom:1px solid black;
+      color: #B1B1B1!important;;}
+    .cajaopcionult:hover{
+  background-color: rgba(182, 180, 185, 0.62);
+
+      cursor: pointer;
+    }
+.dos{background:red;}
+.primer{
+  border-top:0px;
+}
+.cajaopcion:hover{
+  background-color: rgba(182, 180, 185, 0.62);
+  color:white!important;
+  cursor: pointer;
+}
+
+/*imagen*/
+
+.contenedorimg{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor:default !important;
+}
+@media(max-width: 768px){
+  .contenedorimg{
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+  }
+}
+.zoom{
+  z-index: -3;
+  border: 5px solid rgb(217, 210, 214);
+  width: 50%;
+ cursor: pointer;
+
+  /* Aumentamos la anchura y altura durante 2 segundos */
+
+  transition: width 2s, height 2s, -webkit-transform 2s;
+
+  transition: width 2s, height 2s, transform 2s;
+
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+
+  -o-transition: width 2s, height 2s,-o-transform 2s;
+
+}
+.zoom:hover{
+z-index: 3;
+position: relative;
+  /* tranformamos el elemento al pasar el mouse por encima al doble de
+
+     su tamaño con scale(2). */
+  transform : scale(3);
+
+  -moz-transform : scale(3);      /* Firefox */
+
+  -webkit-transform : scale(3);   /* Chrome - Safari */
+
+  -o-transform : scale(3);        /* Opera */
+
+}
+
+.figura{
+  position: relative;
+  margin-top:0 !important;
+  padding-top:0 !important;
+}
+
+.descrip{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  position: absolute;
+  padding-top: 10%;
+  width: 102%;
+  top:100%;
+  background: inherit;
+  border: 5px solid rgb(217, 210, 214);
+  text-shadow: none;
+  left:-2.5%;
+  z-index: 10;
+  padding-bottom: 10%;
+}
+/*enlacever mas*/
+.vermast{
+  margin: 10px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.vermast a{
+ color:#d99148;
+}
+.vermast a:hover{
+   font-size: 1.3em;
+}
+
+
+
+
+/* --LIBROS-- */
+
+
+.librosharrypotter .img-fluid{
+  width: 200px!important;
+  display: flex;
+  align-self: center;
+  -webkit-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+#cabeceralibros{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/libreria.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.textlibro{
+  font-size: 1em;
+  padding-top: 3em;
+}
+/*-NOTICIAS-*/
+#cabeceranews{
+width: 100vw;
+height: 300px;
+background: url("../img/profeta.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+#noticias .img-fluid{
+ display: flex;
+ align-self: center;
+ -webkit-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.textnew{
+  padding-top: 2em;
+}
+.col-lg-4 {
+  text-align: center;
+    padding-top: 2em!important;
+    padding-bottom: 2em!important;
+}
+.segundonew{
+  padding-top: 2em!important;
+  padding-bottom: 2em!important;
+}
+
+/*- HOGWARTS -*/
+#cabecerahg{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/grancomedor.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+/*TOP10*/
+.topusr{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nombrepuntos{
+  display: flex;
+  flex-direction: column;
+}
+.toppuntos .jumbotron{
+  padding:inherit!important;
+}
+.toppuntos {
+  padding: inherit;
+}
+@media(max-width: 1000px){
+  .topusr{
+    display: flex;
+    flex-direction: column;
+  }
+  .nombrepuntos{
+    padding-bottom: 1em;
+  }
+}
+
+/*COMENTARIOS*/
+.comentarea {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+.comentarea input{
+  float: right;
+}
+.chat textarea{
+  width: 100%;
+}
+.chat .jumbotron{
+  padding-left: 0;
+  padding-right: 0;
+}
+.titulocoment{
+  background: rgba(182, 180, 185, 0.62);
+  padding:  0.5em;
+  padding-left: 2em!important;
+}
+.toppuntos h5{
+  text-align: center;
+  padding: 1em;
+}
+.titulocoment h6{
+  color:white;
+}
+.titulocoment b{
+  font-size: 1.2em;
+}
+
+.zonatext{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.zonatext p{
+  margin:2em;
+  margin-left: 0;
+  width: 60%;
+}
+.avatarimg{
+  width: 50px!important;
+  height: 50px!important;
+  margin:2em;
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+
+}
+
+/*---ADMINISTRACIÓN--*/
+.passpre{
+text-align: center;
+background: url("../img/sirena.jpg");
+padding-top: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding-bottom: 50px;
+height: 500px;
+}
+
+#cabecerapre{
+width: 100vw;
+height: 300px;
+background: url("../img/cabecerapre.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   border:1px solid black;
+}
+.styled-select {
+   overflow: hidden;
+   background: transparent;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px;
+}
+
+.tablalista{
+width: 100%;
+border: 1px solid black;
+text-align: center;}
+.tablalista tr{
+  border-bottom: 1px solid black;
+}
+.tablalista th{
+  text-align: center;
+}
+
+.tittablausr{
+  background: rgba(182, 180, 185, 0.62);
+  color:white;
+  text-align: center;
+}
+td input{
+  width: 100%;
+}
+/*--CASAS--*/
+.notpass h1{
+  padding-bottom: 5em;
+}
+.notpass p{
+  color:white!important;
+}
+.contcasa{
+  border:10px solid black!important;
+  border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+  width: 300px;
+  margin: auto;
+  height: 300px;
+}
+.black-capa{
+  background-color: rgba(0, 0, 0, 0.65);
+  margin: auto;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.black-capa h2, .black-capa h3{
+  padding-top: 2em!important;
+}
+.relojarenacont{
+  display: flex;
+  align-content: center;
+}
+.jumbotron{
+  padding-top: 1em!important;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+
+}
+.relojarena{
+
+  width: 300px;
+  margin: auto;
+}
+@media(max-width: 768px){
+.relojarena{
+  width: 90%;
+}
+.contcasa{
+  width: 90%;
+}
+}
+/*ficha casa */
+
+.avatar{
+  margin:2em;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 200px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.44);
+
+}
+.cambiaravatar{
+  padding-bottom: 1em!important;
+}
+.cambiaravatar .button-naranja{
+  margin-bottom: 1em;
+}
+.nombrepuntos h2{
+  font-size: 4em;
+  text-transform: capitalize;
+}
+.fichausr .jumbotron{
+padding-bottom: 1em!important;
+}
+.fichausr p{
+  font-size: 2em;
+}
+.cambiaravatar form{
+  padding: 2em;
+}
+
+.archivo{
+  width: 100%!important;
+}
+
+/*-GRY-*/
+/*sala*/
+#cabeceragry{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/gryroom.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+/*Grynopas*/
+.passgry{
+  text-align: center;
+background: url("../img/fat-lady.jpg");
+padding-top: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding-bottom: 50px;
+height: 500px;
+}
+.contgry{
+  background-color: red;
+  background: url("../img/gryffindor.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/*-SLY-*/
+#cabecerasly{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/slyroom.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+.passsly{
+text-align: center;
+background: url("../img/mazmorra.jpg");
+padding-top: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding-bottom: 50px;
+height: 500px;
+}
+.contsly{
+  background-color: red;
+  background: url("../img/slytherin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-HUF-*/
+#cabecerahuf{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/hufroom.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.passhuf{
+text-align: center;
+background: url("../img/barriles.jpg");
+padding-top: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+padding-bottom: 50px;
+height: 500px;
+}
+.conthuf{
+  background-color: red;
+  background: url("../img/hufflepuff.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-RAV-*/
+#cabecerarav{
+  width: 100vw;
+  height: 300px;
+  background: url("../img/ravroom.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+.passrav{
+text-align: center;
+background: url("../img/torrerav.jpg");
+padding-top: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding-bottom: 50px;
+height: 500px;
+}
+.contrav{
+  background-color: red;
+  background: url("../img/ravenclaw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*==========FOOTER=========*/
+
+
+
+footer{
+  border-top:2px solid black;
+  background: url("../img/profeta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+}
+
+
+.white-color{
+  background-color: rgba(0, 0, 0, 0.79);
+  margin: auto;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+.white-color a{
+    color: #d27923;
+}
+
+/* SPRITE */
+.network {
+  padding-bottom: 10px!important;
+}
+.network ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+
+.network li{
+  width: 35px;
+  height: 35px;
+  margin-left: 1em;
+  margin-right: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.network li:nth-of-type(1){
+  background: url("../img/spritenet.png") no-repeat -5px -5px;
+}
+.network li:nth-of-type(1):hover{
+  background: url("../img/spritenet.png") no-repeat -5px -45px;
+}
+.network li:nth-of-type(2){
+  background: url("../img/spritenet.png") no-repeat -41px -5px;
+
+}
+.network li:nth-of-type(2):hover{
+  background: url("../img/spritenet.png") no-repeat -41px -45px;
+
+}
+.network li:nth-of-type(3){
+  background: url("../img/spritenet.png") no-repeat -76px -5px;
+
+}
+.network li:nth-of-type(3):hover{
+  background: url("../img/spritenet.png") no-repeat -76px -45px;
+
+}
+.network li:nth-of-type(4){
+  background: url("../img/spritenet.png") no-repeat -110px -5px;
+
+}
+.network li:nth-of-type(4):hover{
+  background: url("../img/spritenet.png") no-repeat -110px -45px;
+
+}
